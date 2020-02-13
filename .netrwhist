@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/bideinsilence'
+let g:netrw_dirhist_2='/home/bideinsilence/learning-area'
+let g:netrw_dirhist_3='/home/bideinsilence/learning-area/css'
+let g:netrw_dirhist_4='/home/bideinsilence/learning-area/css/css-layout'
+let g:netrw_dirhist_5='/home/bideinsilence/learning-area/css/css-layout/flexbox'
