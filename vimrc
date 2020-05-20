@@ -16,6 +16,10 @@ set encoding=utf-8
 " Maps system keyboard to Vim's paste buffer
 set clipboard=unnamedplus
 
+" Aid in pasting text unmodified from other applications, can be set manually
+" as :set paste, :set nopaste
+set pastetoggle=<F2>
+
 " Enable sytax processing
 syntax on
 
