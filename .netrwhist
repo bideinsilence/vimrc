@@ -1,7 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/home/corey/web-projects/mysite3/polls'
-let g:netrw_dirhist_2='/home/corey/web-projects/mysite3'
-let g:netrw_dirhist_3='/home/corey/web-projects/mysite3/polls'
-let g:netrw_dirhist_4='/home/corey/web-projects/neato-baby'
-let g:netrw_dirhist_5='/home/corey/web-projects/neato-baby/styles'
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/corey'
+let g:netrw_dirhist_2='/home/corey/.config'
+let g:netrw_dirhist_3='/home/corey/.config/nvim'
+let g:netrw_dirhist_4='/home'
+let g:netrw_dirhist_5='/home/corey'
+let g:netrw_dirhist_6='/home/corey/.config'
+let g:netrw_dirhist_7='/home/corey/.config/nvim'
+let g:netrw_dirhist_8='/home/corey'
