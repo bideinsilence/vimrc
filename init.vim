@@ -102,32 +102,38 @@ noremap <C-w>- :resize -5<CR>
 noremap <C-w>< :vertical:resize -10<CR>
 noremap <C-w>> :vertical:resize +10<CR>
 
-" My preferred window navigation
-" <leader>w instead of <C-w> for window commands
+" --- Window Navigation ---
+"
+" Map window commands to leader
 nnoremap <leader>w <C-w>
 " Quicker/easier window movement
-nnoremap <leader>h <C-w>h
-nnoremap <leader>j <C-w>j
-nnoremap <leader>k <C-w>k
-nnoremap <leader>l <C-w>l
+nnoremap <leader>h <c-w>h
+nnoremap <leader>j <c-w>j
+nnoremap <leader>k <c-w>k
+nnoremap <leader>l <c-w>l
 
 
-" --- netrw ---
-"
-" Native File explorer settings
-" Nerdtree like setup:
-" For a similar experience use :Lex, :vertical resize 28
-" No banner
+" Map visual block mode to leader
+nnoremap <leader>v <C-v>
+
+
+"" --- netrw ---
+""
+"" Native File explorer settings
+"" Nerdtree like setup:
+"" - For a similar experience use :Lex, :vertical resize 28
+""
+"" No banner
 "let g:netrw_banner = 0
-" Tree view
+"" Tree view
 "let g:netrw_liststyle = 3
-" Open file with <cr> in previous window
+"" Open file with <cr> in previous window
 "let g:netrw_browse_split = 4
-" Open vertical splits to the right
+"" Open vertical splits to the right
 "let g:netrw_altv = 1
-" Set view/split size to a portion of the left screen
+"" Set view/split size to a portion of the left screen
 "let g:netrw_winsize = 28
-" Run on starting vim
+"" Run on starting vim
 "augroup ProjectDrawer
 "  autocmd!
 "  autocmd VimEnter * :Vexplore
@@ -157,7 +163,8 @@ endif
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
 "
-" Declare the list of plugins
+" -- Declare the list of plugins --
+"
 " - Make sure you use single quotes
 " - Shorthand notation; fetches https://github.com/junegunn/vim-easy-align:
 " Plug 'junegunn/vim-easy-align'
@@ -166,10 +173,10 @@ call plug#begin('~/.vim/plugged')
 " - Multiple Plug commands can be written in a single line using | separators
 " Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 "
+" -- Tools --
+"
 " Lean & mean status/tabline for vim that's light as air.
 Plug 'vim-airline/vim-airline'
-" Vim-airline-themes.
-Plug 'vim-airline/vim-airline-themes'
 " The NERDTree is a file system explorer for the Vim editor.
 Plug 'scrooloose/nerdtree'
 " Adds icons to your plugins
@@ -181,10 +188,15 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Jinja bundle for vim.
 Plug 'lepture/vim-jinja'
-" A dark color scheme for Vim heavily inspired by the look of the Dark+ scheme of Visual Studio Code.
-Plug 'tomasiser/vim-code-dark'
+"
+" -- Themes --
+"
+" Vim-airline-themes.
+Plug 'vim-airline/vim-airline-themes'
 " Molokai is a Vim port of the monokai theme for TextMate
 Plug 'tomasr/molokai'
+" A dark color scheme for Vim heavily inspired by the look of the Dark+ scheme of Visual Studio Code.
+Plug 'tomasiser/vim-code-dark'
 " Bad Wolf - A Vim colorscheme pieced together by Steve Losh.
 Plug 'sjl/badwolf'
 " gruvbox is heavily inspired by badwolf, jellybeans and solarized.
@@ -217,7 +229,7 @@ let g:airline_theme='codedark'
 " Have NERDTree show hidden files by default.
 let NERDTreeShowHidden=1
 " Toggle NERDTree w/ <leader>N
-nnoremap <leader>N :NERDTreeToggle<CR>
+nnoremap <leader>n :NERDTreeToggle<CR>
 "
 "
 " -- For coc - Conquer of Completion --
